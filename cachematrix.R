@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ## SHIVIN SINGH 
+=======
+## shivin singh
+>>>>>>> origin/master
 ## 25-01-2015
 ## makeCacheMatrix 
 ## 1. Initializes a variable 'inv' 
@@ -23,19 +27,35 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
+<<<<<<< HEAD
 
 ## calculating the inverse of the matrix
 ##also checks whether the inverse has already been calculated
+=======
+>>>>>>> origin/master
 
+
+## checks whether the inverse has already been calculated
+## calculating the inverse of the matrix
 cacheSolve <- function(x, ...) {
   inv <- x$getinv()
+<<<<<<< HEAD
   if(!is.null(inv)) {                # cached inverse found
+=======
+  if(!is.null(inv)) {  #cached inverse found
+>>>>>>> origin/master
     message("getting cached data")
     return(inv)
   }
   message("calculating for the first time")
   data <- x$get()
+<<<<<<< HEAD
   inv <- solve(data, ...)           #  finds inverse of the matrix
   x$setinv(inv)
   inv                                #  returning the obtained matrix
+=======
+  inv <- solve(data, ...)#finds inverse of the matrix
+  x$setinv(inv)
+  inv#returning the obtained matrix
+>>>>>>> origin/master
 }
