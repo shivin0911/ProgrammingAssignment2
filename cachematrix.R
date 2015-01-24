@@ -5,7 +5,7 @@
   ##    (which will be used to save inverse matrix latter, i.e. a cached data);
   ## 2. Provides function get() to obtain "raw" matrix (of which one needs to find 
   ##    its inverse);
-## 3. Provides function setinv() to assign computed inverse matrix (of x) to m;
+## 3. Provides function setinv() to assign computed inverse matrix (of x) to inv;
 ## 4. Provides function getinv() to obtain the cached inverse matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
